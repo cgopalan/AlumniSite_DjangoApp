@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<style type="text/css">
+div.container
+{
+width:700px;
+margin:0px;
+font:15px arial,sans-serif;
+}
+div.banner
+{
+padding:0.5em;
+height:200px;
+font:15px arial,sans-serif;
+clear:left;
+}
+div.left
+{
+float:left;
+width:280px;
+margin:0;
+padding:1em;
+}
+.class3
+{
+ width: 200px; 
+ height: 148px;
+ }
+
+.class4
+{background-color:#79ff9b;
+ height: 180px;
+ width:300px;
+}
+div.content
+{
+margin-left:400px;
+}
+
+ul
+{
+float:left;
+width:800px;
+padding:0;
+margin:0;
+list-style-type:none;
+}
+.menulink
+{
+float:left;
+width:8em;
+text-decoration:none;
+color:white;
+background-color:blue;
+padding:0.2em 0.6em;
+}
+.menulink:hover {background-color:#6ccfff;}
+li {
+display:inline;
+font:15px arial,sans-serif;
+}
+</style><title></title></head><body>
+<ul>
+<li><a class="menulink" href="http://www.hartleysalumni.com">Home</a></li>
+<li><a class="menulink" href="http://www.hartleysalumni.com/aboutus/">About us</a></li>
+<li><a class="menulink" href="http://www.hartleysalumni.com/hartleys/">Hartleys school</a></li>
+<li><a class="menulink" href="http://www.hartleysalumni.com/contactus/">Contact us</a></li>
+<li><a class="menulink" href="http://www.hartleysalumni.com/login/">Alumnus login</a></li>
+</ul>
+<br />
+<div class="container">
+<br />
+<p> Change your password: </p>
+<br />
+{% if error %}
+    <p align="center" style="color: red;">{{ error }}</p>
+  {% endif %}
+
+  <form action="" method="post">
+  <table>
+	<tr>
+	<td><label for="oldpass">Old Password:</label></td>
+	<td><input type="password" name="oldpass" value="" id="oldpass"></td>
+	</tr>
+	<tr>
+	<td><label for="newpass1">New Password:</label></td>
+	<td><input type="password" name="newpass1" value="" id="newpass1"></td>
+	</tr>
+        <tr>
+	<td><label for="newpass2">New Password Again:</label></td>
+	<td><input type="password" name="newpass2" value="" id="newpass2"></td>
+	</tr>
+	<tr><td /><td /></tr><tr><td /><td /></tr>
+	<tr><td colspan=2><center><input type="submit" value="Submit" /></center></td></tr>
+  </table>
+  </form>
+
+</div>
+</body>
+</html>
